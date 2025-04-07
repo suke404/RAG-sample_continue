@@ -1,0 +1,21 @@
+contextProviders:
+  - provider: http
+    params:
+      url: http://0.0.0.0:8000/retrieve
+      name: code-search
+      description: Semantic Code Search
+      displayTitle: Code Context
+      requestConfig:
+        headers:
+          Content-Type: application/json
+        timeout: 10000
+      responseConfig:
+        contextItemsPath: contextItems
+        errorPath: error
+        statusPath: status
+        successValue: success
+
+settings:
+  maxContextItems: 5
+  minQueryLength: 3
+  debounceMs: 300 

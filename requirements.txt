@@ -1,0 +1,8 @@
+lancedb==0.4.3
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.6.1
+requests==2.31.0
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.0
